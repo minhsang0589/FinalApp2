@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/imv_user_item"
+            android:background="@drawable/user"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_tendangnhap_item"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Tên đăng nhập"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_tennguoidung_item"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="hợp tác xã"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imv_email_item"
+            android:background="@drawable/email"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_email_item"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_emailnguoidung_item"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:text="email.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

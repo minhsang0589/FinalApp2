@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <ImageView
+        android:layout_weight="55"
+        android:background="@drawable/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_weight="45"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+
+        >
+        <EditText
+
+            android:drawableLeft="@drawable/shapekey"
+            android:id="@+id/edt_tendangnhap"
+            android:layout_marginBottom="16dp"
+            android:hint="   Tên đăng nhập"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:drawableRight="@drawable/shape"
+            android:drawableLeft="@drawable/shape1"
+
+            android:id="@+id/edt_matkhau"
+            android:hint="    Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <CheckBox
+                android:layout_weight="1"
+                android:layout_alignParentLeft="false"
+                android:id="@+id/checkbox_nhodangnhap"
+                android:text="Nhớ đăng nhập"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#0a0909"
+                android:gravity="right"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_quenmatkhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Quên mật khẩu?" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:textColor="#fcfcfc"
+                android:id="@+id/btn_dangnhap"
+                android:layout_marginTop="30dp"
+                android:background="#64baa5"
+                android:text="Đăng nhập"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:layout_alignBottom="@+id/btn_dangnhap"
+                android:id="@+id/tv_coppyright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Coppyright 2017 by Viettel">
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
