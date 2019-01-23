@@ -16,8 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
+        android:id="@+id/tvsokhachhang"
         android:gravity="center_horizontal"
-        android:text="Tổng số khách hàng là:"
+        android:text="Tổng số khách hàng là:1234"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
@@ -29,6 +30,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 <android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerviewinfo"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
